@@ -1135,6 +1135,27 @@ footer { background: var(--ink); color: var(--cream); }
 .footer-legal a:hover { color: rgba(245,240,232,0.7); }
 .footer-copy { font-size: 0.78rem; color: rgba(245,240,232,0.4); }
 
+/* ── VIDEO EMBED ── */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 4rem;
+  aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+}
+
 /* ── SCROLL ANIMATIONS ── */
 .fade-in {
   opacity: 0;
@@ -1173,11 +1194,11 @@ footer { background: var(--ink); color: var(--cream); }
 <nav>
   <a href="index.html" class="nav-logo">@Virtu<span>Ally</span></a>
   <ul class="nav-links">
+    <li><a href="homepage.html" class="nav-back">← Back to VirtuAlly</a></li>
     <li><a href="#overview">Overview</a></li>
     <li><a href="#steps">Step-by-Step</a></li>
     <li><a href="#tips">Pro Tips</a></li>
     <li><a href="#pricing">Fees</a></li>
-    <li><a href="index.html#courses">← Back to VirtuAlly</a></li>
     <li><a href="https://gumroad.com" target="_blank" class="nav-cta">Open Gumroad ↗</a></li>
   </ul>
 </nav>
@@ -1746,6 +1767,11 @@ footer { background: var(--ink); color: var(--cream); }
   </div>
 
 </section>
+
+  <!-- YouTube Video Embed -->
+  <div class="video-container">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/M_m-UvkJiJI" title="Gumroad Tutorial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 
 
 <!-- ── FEATURES / PRO TIPS (dark section) ── -->
